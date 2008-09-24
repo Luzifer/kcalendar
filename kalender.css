@@ -1,0 +1,103 @@
+/*
+###
+# kalender.css
+# Little javascript based calendar which is supposed to be a date-selector on
+# websites.
+#
+# (c) 2007 by K. Ahlers
+#
+# This program is free software; you can redistribute it and/or modify it under
+# the terms of the GNU General Public License as published by the Free Software
+# Foundation; either version 2 of the License, or (at your option) any later
+# version.
+#
+# This program is distributed in the hope that it will be useful, but WITHOUT
+# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+# FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program; if not, write to the Free Software Foundation, Inc.,
+# 51 Franklin St, Fifth Floor, Boston, MA 02110, USA
+###
+*/
+
+.kalender {
+	width: 220px;
+	height: 180px;
+	font-size: 8pt;
+	border: 1px solid black;
+	font-family: sans-serif;
+}
+
+.kalender td {
+	font-size: 8pt;
+}
+
+.kalender a:link, .kalender a:visited, .kalender a:active {
+	color: black;
+	text-decoration: none;
+}
+
+.kal-header {
+	text-align: center; 
+	background: #0066CC;
+	color: #cceeff;
+}
+
+.kal-header-lnk {
+	text-align: center;
+	background: #0066CC;
+	color: #cceeff;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.kal-day {
+	text-align: center;
+	cursor: pointer;
+
+}
+
+.kal-weday {
+	text-align: center;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.kal-today {
+	text-align: center;
+	font-weight: bold;
+	color: red;
+	cursor: pointer;
+}
+
+.kal-head {
+	text-align: center;
+	background: #eeeeee;
+	width: 12%;
+}
+
+.kal-week {
+	text-align: center;
+	font-style: italic;
+	color: #666666;
+}
+
+.kal-weekhead {
+	text-align: center;
+	background: #eeeeee;
+	width: 16%;
+}
+
+.today {
+	text-align: center;
+	cursor: pointer;
+}
+
+.choose {
+	background: #0066CC;
+	border: 1px solid #cceeff;
+	color: #cceeff;
+	height: 15px;
+	font-size: 8pt;
+}

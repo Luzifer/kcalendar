@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>KCalendar testpage</title>
+		<script src="kalender.js" type="text/javascript"></script>
+				<link rel="Stylesheet" type="text/css" href="kalender.css" />
+		
+	</head>
+	<body>
+		<div id="kalender" class="kalender"></div>
+		<script type="text/javascript">
+			function OnCalendarClick(year, month, day) {
+				alert('You clicked on this date: ' + year + '-' + month + '-' + day);
+			}
+			ShowCurrentCalendar('kalender', 'OnCalendarClick');
+		</script>
+		<p>To use this calendar simply create a div which got an unique id. Then use the following JavaScript-Code to display the calendar:
+			<pre style="background-color: #eee;">
+&lt;script type="text/javascript"&gt;
+	ShowCurrentCalendar(id of the div, name of the callback function);
+&lt;/script&gt;
+			</pre>
+			The callback function have to accept three parameters: year, month, day.
+		</p>
+		<p>
+			Here is the example used in this page to display the calendar and a message box when the user clicks a date:
+			<pre style="background-color: #eee;">
+&lt;script type="text/javascript"&gt;
+	function OnCalendarClick(year, month, day) {
+		alert('You clicked on this date: ' + year + '-' + month + '-' + day);
+	}
+	ShowCurrentCalendar('kalender', 'OnCalendarClick');
+&lt;/script&gt;
+			</pre>	
+		</p>
+	</body>
+</html>
